@@ -1,0 +1,67 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: larger;
+        height: 100vh;
+      }
+      .numer_ {
+        display: flex;
+        margin-bottom: 20px;
+        gap: 30px;
+      }
+      label {
+        width: 100%;
+      }
+      input {
+        width: 30px;
+        height: 30px;
+        /* border-radius: 15px; */
+      }
+      .card {
+        border: 1px solid black;
+        /* height: 100px; */
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        border-radius: 15px;
+      }
+      button {
+        border-radius: 10px;
+        background-color: #74be54;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="numer_">
+        <label for="">ingresa el primer numero</label>
+        <input type="text" id="numero_1" />
+      </div>
+      <div class="numer_">
+        <label for="">ingresa el segundo numero</label>
+        <input type="text" id="numero_2" />
+      </div>
+      <div class="numer_">
+        <button onclick="cualEsMayor()" id="Calcular">
+          Calcular la respuesta
+        </button>
+        <p id="resultado"></p>
+      </div>
+    </div>
+
+    <script src="funtions.js"></script>
+  </body>
+</html>
